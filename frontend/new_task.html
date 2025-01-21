@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA DE TAREFAS</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/all.min.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+</head>
+
+<body>
+    <div class="container my-5">
+
+        <!-- CABEÇALHO -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="d-flex justify-content-start">
+                    <img src="assets/images/favicon3.png" alt="Logo" class="img-fluid me-3" width="50px">
+                    <h1>Lista de Tarefas</h1>
+                </div>
+            </div>
+            <hr class="my-3">
+        </div>
+
+        <!-- ESPAÇO PARA CRIAR NOVA TAREFA -->
+        <div class="row">
+            <div class="col">
+                <h3>Nova tarefa</h3>
+                <div class="mb-3">
+                    <input type="text" id="text_task_text" class="form-control" maxlength="200"
+                        placeholder="Designação da tarefa">
+                </div>
+                <div class="text-center">
+                    <a href="index.html" class="btn btn-secondary">Cancelar</a>
+                    <button class="btn btn-primary" id="btn_guardar">Guardar</button>
+                </div>
+                <div class="text-center alert alert-danger p-2 mt-3 d-none" id="error">
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- FOOTER -->
+        <div class="row mt-3">
+            <div class="col text-center">
+                <hr>
+                <p>Lista de tarefas &copy;2025</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/new_task.js"></script>
+</body>
+
+</html>
